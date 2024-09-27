@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.3) 50%), url('https://img.freepik.com/photos-premium/cadenas-technologique-circuits-ecran-ordinateur-portable-concept-securite-donnees-ai-generative_803320-3740.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    color: #fff;
+    background-color: #14415f; 
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: none;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.menu ul li {
+    position: relative; 
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.submenu li a:hover {
+    color: #ff7200;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 65px
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background:  url(https://th.bing.com/th/id/OIP.O-4LiQNG6eB6-QpA2IDpgQHaE7?w=612&h=407&rs=1&pid=ImgDetMain), url(https://img.freepik.com/photos-gratuite/fond-couleur-arc-ciel-reflet-lumiere_1340-25149.jpg?t=st=1727431560~exp=1727435160~hmac=aa82a5716ab5e8c44dd49e04aad2bc7fe8360a18aae63dddb46337bddd96827a&w=1800), linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+}
+
+
+
+
+.horloge {
+    
+    display: flex;
+    width: 1200px;
+   height: auto;
+   margin: auto;
+   margin-top: 14px;
+
+}
+
+.horloge div {
+   margin: 7px;
+    position: relative;
+   
+}
+
+.horloge span {
+    width: 80px;
+    height: 60px;
+    background: #2dcad0;
+    opacity: .8;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.horloge .text {
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #1976b3;
+    opacity: .8;
+}
+
+#ampm {
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: green;
+}
+
+
+
+
+
+
+/* Tablette */
+@media screen and (max-width: 1024px) {
+    
+    .navbar {
+        height: 70px;
+        padding: 0 15px;
+    }
+
+    .menu ul li {
+        margin: 0 10px;
+        font-size: 13px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .form {
+        max-width: 220px;
+    }
+
+    .horloge {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horloge span {
+        font-size: 40px;
+    }
+}
+
+/*  Téléphone portable  */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 30px;
+        padding-left: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .search {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+
+    .horloge span {
+        font-size: 30px;
+    }
+}
+
+/*Petit téléphone  */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu ul li {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .form h2 {
+        font-size: 18px;
+    }
+
+    .horloge span {
+        font-size: 25px;
+    }
+
+}
+
+@keyframes swap {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #2dcad0;
+    }
+    25% {
+        background-color: #ff7200;
+    }
+    50% {
+        background-color: #1976b3;
+    }
+    75% {
+        background-color: #2dd04e;
+    }
+    100% {
+        background-color: #2dcad0;
+    }
+}
+
+.form-animated {
+    animation: swap 3s infinite;
+}
+
+.content-animated {
+    animation: swap 3s infinite reverse;
+}
+
+.horloge span {
+    animation: colorChange 5s infinite;
+}

@@ -1,0 +1,37 @@
+
+/* ~~~ SIDEBAR ~~~ */
+
+.animated {animation: hide-sidebar 1.5s forwards;}
+.reversed {animation: hide-sidebar 1.5s reverse;}
+
+@keyframes hide-sidebar {
+    from {position: relative; left: 0} to {position: absolute; left: -21%}
+}
+
+/* ~~~ CONTACT ~~~ */
+
+@keyframes buzz {
+    5% {rotate: 0deg}
+    10% {rotate: -4deg}
+    15% {rotate: 4deg}
+    20% {rotate: -4deg}
+    25% {rotate: 0deg}
+}
+
+@keyframes contact-label-move-up {
+    from {position: relative; bottom: 55%} to {position: relative; bottom: 100%}
+}
+
+@keyframes contact-label-move-down {
+    from {position: relative; bottom: 100%} to {position: relative; bottom: 55%}
+}
+
+
+/* ~~~ RESPONSIVENESS ~~~ */
+
+@media screen and (max-width: 600px) {
+
+    @keyframes hide-sidebar {
+        from {position: absolute; left: 0} to {position: absolute; left: -78%}
+    }
+}

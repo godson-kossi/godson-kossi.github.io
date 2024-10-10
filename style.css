@@ -1,0 +1,21 @@
+.note {
+    border: 2px solid blue;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.email {
+    border: 2px solid green;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.todo {
+    border: 2px solid red;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+form div {
+    margin-bottom: 10px;
+}

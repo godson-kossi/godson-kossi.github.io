@@ -11,12 +11,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
 
 .container {
     max-width: 900px;
@@ -136,7 +130,6 @@ ul li {
     margin-bottom: 5px;
 }
 
-/* Footer */
 footer.blue {
     text-align: center;
     padding: 10px;

@@ -3,16 +3,25 @@
     padding: 0;
 }
 
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.3) 50%), url('https://img.freepik.com/photos-premium/cadenas-technologique-circuits-ecran-ordinateur-portable-concept-securite-donnees-ai-generative_803320-3740.jpg');
+    background: linear-gradient(to top, rgba(0,0,0,0.3) 100%, rgba(0,0,0,0.3) 100%), url('https://img.freepik.com/photos-premium/cadenas-technologique-circuits-ecran-ordinateur-portable-concept-securite-donnees-ai-generative_803320-3740.jpg');
     background-position: center;
     background-size: cover;
-    height: 100vh;
+ 
 }
 
 .navbar{
-    width: 1200px;
+    max-width: 100%;
     height: 75px;
     margin: auto;
     color: #fff;
@@ -20,37 +29,42 @@
 }
 
 .icon{
-    width: 200px;
+    max-width: 100px;
     float: left;
     height: 70px;
 }
 
 .logo{
     color: #ff7200;
-    font-size: 35px;
+    font-size: 20px;
     font-family: Arial;
     padding-left: 20px;
     float: left;
-    padding-top: 10px;
+    padding-top: 25px;
     margin-top: none;
 }
 
+
+
 .menu{
-    width: 400px;
+    max-width: 400px;
     float: left;
     height: 70px;
+    display: flex;
+
 }
 
 ul{
-    float: left;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 ul li{
     list-style: none;
-    margin-left: 62px;
+    margin-left: 50px;
     margin-top: 27px;
     font-size: 14px;
 }
@@ -62,51 +76,60 @@ ul li a{
     font-weight: bold;
     transition: 0.4s ease-in-out;
 }
+img{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+}
 
 ul li a:hover{
     color: #ff7200;
 }
 
 .search{
-    width: 330px;
+    max-width: 300px;
     float: left;
-    margin-left: 270px;
+    margin-left: 150px;
+    display: flex; 
+    justify-content: flex-end;
 }
 
 .srch{
     font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
+    max-width: 1000px;
+    
+    height: 20px;
     background: transparent;
     border: 1px solid #ff7200;
-    margin-top: 13px;
+    margin-top: 10px;
     color: #fff;
     border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
+    font-size: 20px;
+
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
 
-.btn{
-    width: 100px;
-    height: 40px;
+.btnn{
+    max-width: 100px;
+    max-height: 20px;
     background: #ff7200;
     border: 2px solid #ff7200;
-    margin-top: 13px;
+    margin-top: 10px;
     color: #fff;
     font-size: 15px;
     border-bottom-right-radius: 5px;
-
+    float: left;
     transition: 0.2s ease;
     cursor: pointer;
 }
-.btn:hover{
+.btnn:hover{
     color: #000;
 }
 
-.btn:focus{
+.btnn:focus{
     outline: none;
 }
 
@@ -152,7 +175,7 @@ ul li a:hover{
 }
 
 .content{
-    width: 1200px;
+    max-width: 600px;
     height: auto;
     margin: auto;
     color: #fff;
@@ -163,7 +186,7 @@ ul li a:hover{
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: Arial;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.1px;
     line-height: 30px;
 }
 
@@ -176,8 +199,8 @@ ul li a:hover{
 }
 
 .content .cn{
-    width: 160px;
-    height: 40px;
+    max-width: 160px;
+    max-height: 40px;
     background: #ff7200;
     border: none;
     margin-bottom: 10px;
@@ -204,115 +227,14 @@ ul li a:hover{
     font-size: 65px
 }
 
-.form{
-    width: 250px;
-    height: 380px;
-    background:  url(https://th.bing.com/th/id/OIP.O-4LiQNG6eB6-QpA2IDpgQHaE7?w=612&h=407&rs=1&pid=ImgDetMain), url(https://img.freepik.com/photos-gratuite/fond-couleur-arc-ciel-reflet-lumiere_1340-25149.jpg?t=st=1727431560~exp=1727435160~hmac=aa82a5716ab5e8c44dd49e04aad2bc7fe8360a18aae63dddb46337bddd96827a&w=1800), linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%,-5%);
-    border-radius: 10px;
-    padding: 25px;
-}
-
-.form h2{
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color: #ff7200;
-    font-size: 22px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-}
-
-.form input{
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #ff7200;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-
-.form input:focus{
-    outline: none;
-}
-
-::placeholder{
-    color: #fff;
-    font-family: Arial;
-}
-
-.btnn{
-    width: 240px;
-    height: 40px;
-    background: #ff7200;
-    border: none;
-    margin-top: 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #fff;
-    transition: 0.4s ease;
-}
-.btnn:hover{
-    background: #fff;
-    color: #ff7200;
-}
-.btnn a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-.form .link{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
-}
-.form .link a{
-    text-decoration: none;
-    color: #ff7200;
-}
-.liw{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-.icons a{
-    text-decoration: none;
-    color: #fff;
-}
-.icons ion-icon{
-    color: #fff;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
-    transition: 0.3s ease;
-}
-.icons ion-icon:hover{
-    color: #ff7200;
-}
-
-
-
 
 .horloge {
     
-    display: flex;
-    width: 1200px;
+ display: flex;
+  width: 1200px;
    height: auto;
    margin: auto;
-   margin-top: 14px;
+   margin-top: 16px;
 
 }
 
@@ -323,145 +245,53 @@ ul li a:hover{
 }
 
 .horloge span {
-    width: 80px;
-    height: 60px;
-    background: #2dcad0;
+    max-width: 100%;
+    height: 100%;
     opacity: .8;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 35px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
 }
 
 .horloge .text {
-    height: 30px;
-    font-size: 10px;
+    height: 07px;
+    font-size: 07px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    background: #1976b3;
-    opacity: .8;
+    letter-spacing: 1px;
+    opacity: .6;
 }
 
 #ampm {
     bottom: 0;
     position: absolute;
-    width: 60px;
-    height: 30px;
-    font-size: 20px;
-    background: green;
+    width: 40px;
+    height: 23px;
+    font-size: 15px;
+    background: #1976b3;
+}
+
+.img {
+    max-width: 100%;
+    height: auto; 
 }
 
 
 
-
-
-
-/* Tablette */
-@media screen and (max-width: 1024px) {
-    
-    .navbar {
-        height: 70px;
-        padding: 0 15px;
-    }
-
-    .menu ul li {
-        margin: 0 10px;
-        font-size: 13px;
-    }
-
-    .content h1 {
-        font-size: 40px;
-    }
-
-    .form {
-        max-width: 220px;
-    }
-
-    .horloge {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .horloge span {
-        font-size: 40px;
-    }
-}
-
-/*  Téléphone portable  */
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo {
-        font-size: 30px;
-        padding-left: 0;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    .menu ul li {
-        margin: 10px 0;
-    }
-
-    .search {
-        width: 100%;
-        justify-content: space-between;
-        margin-top: 10px;
-    }
-
-    .content h1 {
-        font-size: 35px;
-    }
-
-    .form {
-        max-width: 100%;
-    }
-
-    .horloge span {
-        font-size: 30px;
-    }
-}
-
-/*Petit téléphone  */
-@media screen and (max-width: 480px) {
-    .logo {
-        font-size: 25px;
-    }
-
-    .menu ul li {
-        font-size: 12px;
-        margin: 5px 0;
-    }
-
-    .content h1 {
-        font-size: 30px;
-    }
-
-    .form h2 {
-        font-size: 18px;
-    }
-
-    .horloge span {
-        font-size: 25px;
-    }
-
-}
-
-@keyframes swap {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(50%);
-    }
+.container {
+    background-image: url("https://img.freepik.com/photos-premium/cadenas-technologique-circuits-ecran-ordinateur-portable-concept-securite-donnees-ai-generative_803320-3740.jpg"); /* Mets ici l'URL de ton image du cadenas */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    max-width: 100%; 
+    height: 100vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
 }
 
 @keyframes colorChange {
@@ -492,4 +322,11 @@ ul li a:hover{
 
 .horloge span {
     animation: colorChange 5s infinite;
+}
+
+
+@media (max-width: 768px) {
+    .horloge, .text, .horloge span, .horloge, .content, .cn, .content h1, .content .par, .content, .submenu, .btnn, .srch, .search, ul li a, .menu, .logo, .icon,.main{
+width: 100%;
+    }
 }

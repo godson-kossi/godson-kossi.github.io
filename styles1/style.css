@@ -138,11 +138,13 @@ animation: colorChange 5s infinite;
 
 
 nav li {
+    list-style-type: none;
     color: #445f7c; font-size: 1.5em;
-    padding: 6% 0 0 1vw;
+    padding: 6% 0 0 2vw;
 }
 
 nav a {
+   
     color: #729fcf; font-weight: bold; text-decoration: none;
     position: relative; left: -10%;
     
